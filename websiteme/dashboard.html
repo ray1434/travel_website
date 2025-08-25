@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelGo | Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🌍 TravelGo</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <span id="userDisplay" class="user-badge"></span>
+      <button id="logoutBtn" class="btn small">Logout</button>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <!-- MAIN DASHBOARD -->
+  <main class="dashboard">
+    <!-- Welcome -->
+    <section class="welcome">
+      <h2>👋 Welcome back, <span id="userName"></span></h2>
+      <p>Plan your next adventure with us easily.</p>
+    </section>
+
+    <!-- Quick Booking -->
+    <section class="quick-booking">
+      <h2>🚀 Quick Booking</h2>
+      <div class="booking-options">
+        <div class="card">
+          <h3>✈️ Flights</h3>
+          <p>Book domestic & international flights.</p>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="card">
+          <h3>🏨 Hotels</h3>
+          <p>Find the best hotel deals worldwide.</p>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="card">
+          <h3>🚗 Tours</h3>
+          <p>Discover curated tours & adventures.</p>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Trips -->
+    <section class="trips">
+      <h2>📅 Your Upcoming Trips</h2>
+      <div class="trip-list">
+        <div class="trip-card">
+          <h3>Paris, France</h3>
+          <p>🗓 Oct 15, 2025</p>
+        </div>
+        <div class="trip-card">
+          <h3>Bali, Indonesia</h3>
+          <p>🗓 Dec 5, 2025</p>
+        </div>
+
+        <div class="trip-card">
+          <h3>USA, Canada</h3>
+          <p>🗓 Dec 5, 2025</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <h2>📊 Booking Overview</h2>
+      <canvas id="bookingChart"></canvas>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 TravelGo Agency | Dashboard</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

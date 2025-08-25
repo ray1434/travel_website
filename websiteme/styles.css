@@ -1,0 +1,161 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f7fb;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background: #3a02ef;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f1c40f;
+}
+
+.user-badge {
+  background: #16a085;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.btn {
+  background: #3498db;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.btn.small {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+/* ========== MAIN CONTENT ========== */
+.dashboard {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Welcome */
+.welcome {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.welcome h2 {
+  margin-bottom: 8px;
+}
+
+/* Quick Booking */
+.quick-booking h2,
+.trips h2,
+.stats h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.booking-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Trips */
+.trip-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trip-card {
+  flex: 1 1 200px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.trip-card h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+/* Stats */
+.stats canvas {
+  width: 100% !important;
+  max-width: 600px;
+  height: auto !important;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #3d06ee;
+  color: #fff;
+  font-size: 0.9rem;
+}
